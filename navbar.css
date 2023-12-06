@@ -1,0 +1,106 @@
+.header-container
+{
+    width : 100%;
+    display: flex;
+}
+
+.logo-div
+{
+    flex:1;
+}
+
+.topnav a
+{
+  flex:2  ;
+  float:left;
+  text-align: end;
+  font-size: 15px;
+  padding : 14px 16px;
+  text-decoration: none;
+}   
+
+#active
+{
+  color: rgb(255, 0, 0);
+}
+
+.topnav a:hover{
+  color: red;
+}
+
+.doctor{
+    width: 95vw;
+}
+.picandtext{
+  position: relative;
+}
+.text{
+  padding-left: 10px;
+  position: absolute;
+  top: 50%;
+  margin-left: 3px;
+}
+.formbox{
+  background-color: rgb(250, 250, 250);
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 75%;
+  position: absolute;
+  left: 15%;
+  top: 90%;
+}
+.form{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  
+}
+
+.col1{
+  flex : 1;
+  height: 40px;
+}
+
+
+#fullname{
+  height: 40px;
+}
+
+#language{
+  width: 238px;
+}
+
+#doctorslist{
+  width: 270px;
+  height: 40px;
+}
+
+
+#selectdate{
+  
+  width: 238px;
+  height: 40px;
+}
+
+
+#department{
+  height: 40px;
+  width: 270px;
+}
+
+
+#phoneno
+{
+  height: 40px;
+}
+
+
+.col2{
+  flex : 1
+}
+
+
+.col3{
+  flex: 1;
+}
+  
