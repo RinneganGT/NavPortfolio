@@ -1,35 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Red+Hat+Display&display=swap');
 body
 {
     background-color: rgb(255, 255, 255);
-}   
+}  
+
+
+.there:hover{
+  transform: scale(1.05);
+  transition-duration: .5s;
+}
+
 
 .name
 {
     text-align: center;
 }
 
-.topnav{
-    
+#topnav{
+    color: black;
     padding-top: 20px;
     text-align: center;
     size: 250px;
 }
+
+
 #active{
     color: red;
 }
 
-.topnav a:hover{
+
+#topnav a:hover{
     color: red;
   }
 
 
-.topnav a
-{
-   text-align: center;
-  font-size: 15px;
+a{
+  color: black;
   padding : 14px 16px;
+  text-align: center;
+  font-size: 15px;
   text-decoration: none;
-}   
+}
+
+  
 .Sub{
     display: flex;
     margin-top: 10px;
@@ -37,6 +50,13 @@ body
     width: 100%;
     
 }
+.HomeSub{
+    display: flex;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+    
 
 .leftside{
     flex: 1;
@@ -70,3 +90,222 @@ body
  .eduright{
     flex: 1;
  }
+
+ .Btech{
+    height: 75px;
+    
+    overflow: hidden;
+ }
+
+ .Btech:hover{
+  font-size: larger;
+  padding-left: 10px;
+  
+ text-shadow: 1px 0px #8c858a;
+  border-radius: 5%;
+  height: 200px;
+  transition-duration: .5s;
+
+ }
+
+ .Highsec{
+  height: 75px;
+  overflow: hidden;
+}
+
+.Highsec:hover{
+  padding-left: 10px;
+  font-size: larger;
+  text-shadow: 1px 0px #8c858a;
+  
+
+  border-radius: 5%;
+  height: 200px;
+  transition-duration: .5s;
+
+}
+
+.Highschool{
+  
+  height: 75px;
+  overflow: hidden;
+}
+
+.Highschool:hover{
+  padding-left: 10px;
+  text-shadow: 1px 0px #8c858a;
+  
+  font-size: larger;
+  border-radius: 5%;
+  height: 200px;
+  transition-duration: .5s;
+
+}
+
+.senseamp{
+  height: 75px;
+  overflow: hidden;
+}
+
+.senseamp:hover{
+  padding-left: 10px;
+  
+  font-size: larger;
+
+  border-radius: 5%;
+  height: 170px;
+  transition-duration: .5s;
+
+}
+.hdc{
+  height: 75px;
+  overflow: hidden;
+}
+
+.hdc:hover{
+  padding-left: 10px;
+  
+  font-size: larger;
+
+  border-radius: 5%;
+  height: 170px;
+  transition-duration: .5s;
+
+}
+
+.lorumm{
+  height: 75px;
+  overflow: hidden;
+}
+
+.lorumm:hover{
+  padding-left: 10px;
+  
+  font-size: larger;
+
+  border-radius: 5%;
+  height: 170px;
+  transition-duration: .5s;
+
+}
+
+ .profilepic{
+    
+ }
+
+ /* @width:650px;
+@height:600px;
+@bar-size:45px;
+@bar-color:#F16335;
+@bar-rounded: 3px;
+
+@grid-color:#aaa; */
+
+.chart-wrap{
+  width: 650px;
+  height: 600;
+  font-family:sans-serif;
+  
+  .title {
+    text-align:center; 
+  }
+}
+
+.grid{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  transform-origin: bottom;
+  
+  animation: revealing-bars 2s linear ;
+  border-bottom:2px solid rgba(253,244,245,255);
+  background:repeating-linear-gradient(0deg,transparent,transparent 19.5%,fadeout(rgb(170, 51, 106)
+  ,30%) 20%);
+  
+  .bar {
+    background-color:rgb(170, 51, 106)
+    ;
+    width:45px;
+    
+    height: var(--bar-value);
+    align-self:flex-end;
+    margin:0 auto;
+    border-radius:3px 3px 0 0;
+    position:relative;
+    
+    &.bar:hover{
+      
+      opacity:0.7;
+    }
+    
+    &::after{
+      content:attr(data-name);
+      top:-3em;
+      padding:10px;
+      display:inline-block;
+      white-space:nowrap;
+      position:absolute;
+      transform:rotate(-45deg);
+    }
+  }
+  
+  &.horizontal{
+    flex-direction:column;
+    border-bottom:none;
+    border-left:2px solid rgba(253,244,245,255);
+      transform: scaleY( 0 ); 
+     transform: scaleY( 1 ); 
+     
+  background:repeating-linear-gradient(90deg,transparent,transparent 19.5%,fadeout(rgb(170, 51, 106)
+  ,30%) 20%);
+    .bar{
+      height:45px;
+      width: var(--bar-value);
+      align-self:flex-start;
+      margin:auto 0 auto 0;
+      border-radius:0 3px 3px 0;
+      
+      &::after{
+        top:initial;
+        left:100%;
+        padding:0 10px;
+        display:inline-block;
+        white-space:nowrap;
+        position:absolute;
+        transform:rotate(0deg);
+        line-height:rgb(170, 51, 106)
+        ;
+      }      
+    }
+  }
+}
+
+#animations-example .column tbody td {
+    transform-origin: bottom;
+    animation: revealing-bars 4s linear infinite;
+  }
+  @keyframes revealing-bars {
+    0%  { transform: scaleY( 0 ); }
+    30% { transform: scaleY( 1 ); }
+  }
+
+  #animations-example .column td {
+    background-image: linear-gradient(
+      45deg,
+      #956fd3,
+      #e76ec2,
+      #ff7fa2,
+      #ffa782,
+      #ffd86f,
+      #faf982
+    );
+    background-size: 600%;
+    animation: gradient-animation 3s linear infinite alternate;
+  }
+  @keyframes gradient-animation {
+    0%   { background-position:   0%; }
+    100% { background-position: 100%; }
+  }
+ 
